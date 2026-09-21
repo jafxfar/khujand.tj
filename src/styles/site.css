@@ -1,0 +1,334 @@
+/* Main stylesheet entry — interactive overrides + template params.
+ * Core YOO Flux CSS is loaded via <link> in layout.tsx for correct relative url() resolution.
+ */
+
+/* Joomla template params (mangled in woblo as HTML comment) */
+.wrapper {
+  width: 92%;
+}
+
+#main-shift {
+  margin-left: 235px;
+}
+
+#left {
+  width: 220px;
+  overflow: visible;
+}
+
+#menu .dropdown {
+  width: 250px;
+}
+
+#menu .columns2 {
+  width: 500px;
+}
+
+#menu .columns3 {
+  width: 750px;
+}
+
+#menu .columns4 {
+  width: 1000px;
+}
+
+.ice-slideshow-candy {
+  position: relative;
+}
+
+.ice-main-wapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.ice-main-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 485px;
+}
+
+.ice-main-item.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+
+.ice-main-item.is-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+.ice-navigator li {
+  cursor: pointer;
+}
+
+.ice-navigator li.active {
+  opacity: 1;
+}
+
+.lof-articlessroller {
+  position: relative;
+  overflow: hidden;
+}
+
+.lof-main-wapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.lof-main-item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.nsp_art_scroll1 {
+  overflow: hidden;
+}
+
+.nsp_art_scroll2 {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.nsp_art_page {
+  flex-shrink: 0;
+}
+
+.pagination li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 2px;
+  padding: 2px 6px;
+}
+
+.pagination li.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#menu .menu-dropdown > li {
+  position: relative;
+}
+
+#menu .menu-dropdown > li:hover > .dropdown,
+#menu .menu-dropdown > li:focus-within > .dropdown {
+  left: -8px;
+  visibility: visible;
+  opacity: 1;
+  height: auto !important;
+  overflow: visible !important;
+  width: 250px;
+}
+
+#menu .fancy {
+  pointer-events: none;
+}
+
+.thumbnail.with-zoomin-img {
+  position: relative;
+  display: inline-block;
+}
+
+.zoomin-img {
+  display: none;
+}
+
+#page-peel {
+  display: none;
+}
+
+.lof-articlessroller .lof-next,
+.lof-articlessroller .lof-previous {
+  cursor: pointer;
+}
+
+/* Match original LOF card: less top gap, photo centered */
+#left .lof-articlessroller .lof-row {
+  padding-top: 0;
+  padding-bottom: 8px;
+  float: none;
+  width: 100%;
+}
+
+#left .lof-articlessroller .lof-inner {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.35;
+  overflow: hidden;
+  padding: 6px 6px 8px;
+  margin: 0 auto;
+}
+
+#left .lof-articlessroller .lof-image-link {
+  display: block;
+  margin: 0 auto;
+  height: auto !important;
+}
+
+#left .lof-articlessroller .lof-inner img.lof-image {
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+#left .lof-articlessroller .lof-inner .lof-title {
+  padding: 8px 0 4px;
+  text-align: center;
+}
+
+#left .mod-rounded-header .box-2.deepest > p {
+  margin: 0;
+  text-align: center;
+}
+
+#left .mod-rounded-header .box-2.deepest > p img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+#jflanguageselection .rawimages span {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+#breadcrumbs .crumb-item {
+  display: inline-block;
+  float: left;
+}
+
+#breadcrumbs .crumb-item .separator {
+  display: inline-block;
+  float: left;
+  margin: 0 6px 0 0;
+  color: #666;
+  line-height: 19px;
+}
+
+#breadcrumbs a.pathway {
+  text-decoration: none;
+  color: #fff;
+}
+
+.article-icon-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+div.joomla div.article-meta {
+  margin: 0 0 14px;
+  color: #777;
+  font-size: 12px;
+  clear: both;
+}
+
+div.joomla div.content_rating {
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+div.joomla ul.article-rating-stars {
+  display: inline-block;
+  margin: 0 6px 0 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: middle;
+}
+
+div.joomla ul.article-rating-stars li.star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 1px;
+  background: #ddd;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+div.joomla ul.article-rating-stars li.star-full,
+div.joomla ul.article-rating-stars li.star-half {
+  background: #f0a000;
+}
+
+div.joomla ul.article-rating-stars li.star-half {
+  opacity: 0.65;
+}
+
+div.joomla .rating-text {
+  vertical-align: middle;
+}
+
+div.joomla .content_vote {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+div.joomla .content_vote .vote-stars {
+  display: inline-block;
+  margin: 0 6px 0 0;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+}
+
+div.joomla .content_vote .vote-star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+  padding: 0;
+  border: 0;
+  background: #ddd;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+div.joomla .content_vote .vote-star.is-active {
+  background: #f0a000;
+}
+
+div.joomla .content_vote .vote-submit {
+  display: inline-block;
+  margin: 0;
+  padding: 1px 8px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #333;
+  background: #eee;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+div.joomla .content_vote .vote-submit:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+div.joomla .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+div.joomla span.created {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
