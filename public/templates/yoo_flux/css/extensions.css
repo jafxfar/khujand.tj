@@ -1,0 +1,86 @@
+/* Copyright (C) 2007 - 2010 YOOtheme GmbH */
+
+#left #form-login fieldset {
+	border: none;
+}
+
+/*
+ * YOOsearch
+ */
+
+#page div.yoo-search div.resultbox {
+	position: absolute;
+	right: 0px;
+	top: 35px;
+	z-index: 20;
+}
+
+/*
+ * YOOtweet
+ */
+
+/* single */
+#header div.single div.yoo-tweet {
+	min-width: 200px;
+	max-width: 400px;
+}
+
+#header div.single div.yoo-tweet p {
+	margin-top: 0px;
+}
+
+/*
+ * YOOlogin
+ */
+
+ 
+/* quick */
+#header span.quick span.yoo-login {}
+
+#header span.quick span.yoo-login span.login { width: 231px; }
+
+#header span.quick span.yoo-login span.login span.login-button-text,
+#header span.quick span.yoo-login span.login span.login-button-icon { margin-right: 0px; }
+
+#header span.quick span.yoo-login span.login span.lostpassword, 
+#header span.quick span.yoo-login span.login span.lostusername,
+#header span.quick span.yoo-login span.login span.registration { margin-top: 5px; }
+
+#header span.quick span.yoo-login span.logout {
+	margin-top: 10px;
+	overflow: visible;
+}
+
+#header span.quick span.yoo-login span.logout span.logout-button-text,
+#header span.quick span.yoo-login span.logout span.logout-button-icon { margin-right: 0px; }
+
+/* nifty quick */
+#header span.niftyquick span.yoo-login {}
+
+#header span.niftyquick span.yoo-login span.login {
+	width: 268px;
+	height: 50px;
+}
+
+#header span.niftyquick span.yoo-login span.login span.login-button { margin-right: 0px; }
+
+#header span.niftyquick span.yoo-login span.login span.lostpassword, 
+#header span.niftyquick span.yoo-login span.login span.lostusername,
+#header span.niftyquick span.yoo-login span.login span.registration { margin-top: 5px; }
+
+#header span.niftyquick span.yoo-login span.logout {
+	margin-top: 10px;
+	overflow: visible;
+}
+
+#header span.niftyquick span.yoo-login span.logout span.logout-button { margin-right: 0px; }
+
+ 
+#header span.niftyquick span.yoo-login span.login span.username input,
+#header span.niftyquick span.yoo-login span.login span.password input {
+	width: 95%;
+	height: 12px;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	overflow: hidden;
+}
