@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import '@/styles/site.css'
+import { headers } from 'next/headers'
 
 export const metadata: Metadata = {
   title: 'Мақомоти иҷроияи ҳокимияти давлатии шаҳри Хуҷанд',
@@ -26,7 +26,21 @@ const templateStyles = [
   'https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css',
 ]
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  const headersList = await headers()
+  const pathname = headersList.get('x-pathname') ?? ''
+  const isAdmin = pathname.startsWith('/admin')
+
+  if (isAdmin) {
+    return (
+      <html lang="ru" dir="ltr" suppressHydrationWarning>
+        <body className="antialiased bg-slate-100 text-slate-900">{children}</body>
+      </html>
+    )
+  }
+
   return (
     <html lang="tg-tj" dir="ltr" suppressHydrationWarning>
       <head>

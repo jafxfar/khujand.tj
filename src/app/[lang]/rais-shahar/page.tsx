@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { ArticlePage } from '@/components/ArticlePage'
-import { getRaisShaharArticle } from '@/data/i18n/articles/rais-shahar'
+import { getRaisShaharArticleFromDb } from '@/lib/content/articles'
 import { isLocale } from '@/lib/i18n'
 
 type Props = {
@@ -11,11 +11,13 @@ type Props = {
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
   const { lang: raw } = await params
   if (!isLocale(raw)) return {}
-  return { title: getRaisShaharArticle(raw).title }
+  const article = await getRaisShaharArticleFromDb(raw)
+  return { title: article.title }
 }
 
 export default async function RaisShaharPage({ params }: Props) {
   const { lang: raw } = await params
   if (!isLocale(raw)) notFound()
-  return <ArticlePage lang={raw} article={getRaisShaharArticle(raw)} />
+  const article = await getRaisShaharArticleFromDb(raw)
+  return <ArticlePage lang={raw} article={article} />
 }

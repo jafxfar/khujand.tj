@@ -1,7 +1,7 @@
 import { ArticleView } from '@/components/ArticleView'
 import { PageShell } from '@/components/PageShell'
 import type { SiteArticle } from '@/data/i18n/articles/types'
-import { getHomeContent } from '@/data/i18n/home'
+import { getHomeContentFromDb } from '@/lib/content/home'
 import type { Locale } from '@/lib/i18n'
 
 type ArticlePageProps = {
@@ -9,8 +9,8 @@ type ArticlePageProps = {
   article: SiteArticle
 }
 
-export const ArticlePage = ({ lang, article }: ArticlePageProps) => {
-  const content = getHomeContent(lang)
+export const ArticlePage = async ({ lang, article }: ArticlePageProps) => {
+  const content = await getHomeContentFromDb(lang)
 
   return (
     <PageShell lang={lang} content={content} crumbs={article.crumbs}>
@@ -26,6 +26,7 @@ export const ArticlePage = ({ lang, article }: ArticlePageProps) => {
         roleTitle={article.roleTitle}
         paragraphs={article.paragraphs}
         rating={article.rating}
+        ui={content.ui}
       />
     </PageShell>
   )

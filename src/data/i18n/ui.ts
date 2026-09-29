@@ -39,6 +39,8 @@ export type UiStrings = {
   averageWord: string
   ofWord: string
   rate: string
+  print: string
+  emailAction: string
 }
 
 const dict: Record<Locale, UiStrings> = {
@@ -81,6 +83,8 @@ const dict: Record<Locale, UiStrings> = {
     averageWord: 'миёна',
     ofWord: 'аз',
     rate: 'Баҳо додан',
+    print: 'Чоп',
+    emailAction: 'Почта',
   },
   ru: {
     siteTitle: 'Исполнительный орган государственной власти города Худжанд - Главная',
@@ -121,6 +125,8 @@ const dict: Record<Locale, UiStrings> = {
     averageWord: 'средний',
     ofWord: 'из',
     rate: 'Оценить',
+    print: 'Печать',
+    emailAction: 'Email',
   },
   en: {
     siteTitle: 'Executive Body of State Authority of Khujand City - Home',
@@ -161,6 +167,8 @@ const dict: Record<Locale, UiStrings> = {
     averageWord: 'average',
     ofWord: 'of',
     rate: 'Rate',
+    print: 'Print',
+    emailAction: 'Email',
   },
 }
 

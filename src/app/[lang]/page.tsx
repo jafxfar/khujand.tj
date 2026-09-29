@@ -3,7 +3,7 @@ import { IceTabs } from '@/components/IceTabs'
 import { MainNews } from '@/components/MainNews'
 import { ModuleRounded } from '@/components/ModuleRounded'
 import { PageShell } from '@/components/PageShell'
-import { getHomeContent } from '@/data/i18n/home'
+import { getHomeContentFromDb } from '@/lib/content/home'
 import { isLocale } from '@/lib/i18n'
 
 type Props = {
@@ -14,7 +14,7 @@ export default async function LangHomePage({ params }: Props) {
   const { lang: raw } = await params
   if (!isLocale(raw)) notFound()
 
-  const content = getHomeContent(raw)
+  const content = await getHomeContentFromDb(raw)
 
   return (
     <PageShell

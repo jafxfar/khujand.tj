@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { isLocale, type Locale } from '@/lib/i18n'
-import { getUi } from '@/data/i18n/ui'
+import { getUiFromDb } from '@/lib/content/ui'
 import { HtmlLang } from '@/components/HtmlLang'
+import '@/styles/site.css'
 
 type Props = {
   children: React.ReactNode
@@ -14,7 +15,7 @@ export const generateStaticParams = () => [{ lang: 'tg' }, { lang: 'ru' }, { lan
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
   const { lang: raw } = await params
   const lang: Locale = isLocale(raw) ? raw : 'tg'
-  const ui = getUi(lang)
+  const ui = await getUiFromDb(lang)
   return {
     title: ui.siteTitle,
     description: ui.siteDescription,

@@ -1,0 +1,135 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String    @id @default(cuid())
+  username     String    @unique
+  name         String
+  email        String    @default("")
+  passwordHash String
+  role         String    @default("admin")
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  sessions     Session[]
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  key       String    @unique
+  sortOrder Int       @default(0)
+  articles  Article[]
+}
+
+model Article {
+  id            String               @id @default(cuid())
+  slug          String
+  type          String
+  categoryKey   String               @default("none")
+  categoryId    String?
+  category      Category?            @relation(fields: [categoryId], references: [id])
+  image         String?
+  imageAlt      String?
+  imageWidth    Int?
+  imageHeight   Int?
+  thumb         String?
+  href          String?
+  nameTg        String?
+  nameRu        String?
+  nameEn        String?
+  roleTitleTg   String?
+  roleTitleRu   String?
+  roleTitleEn   String?
+  showOnHome    Boolean              @default(false)
+  isSlide       Boolean              @default(false)
+  published     Boolean              @default(true)
+  sortOrder     Int                  @default(0)
+  ratingVotes   Int                  @default(0)
+  ratingAverage Float                @default(0)
+  publishedAt   DateTime?
+  legacyId      Int?                 @unique
+  createdAt     DateTime             @default(now())
+  updatedAt     DateTime             @updatedAt
+  translations  ArticleTranslation[]
+
+  @@unique([slug, type])
+  @@index([type, categoryKey, published])
+  @@index([showOnHome, isSlide])
+}
+
+model ArticleTranslation {
+  id         String  @id @default(cuid())
+  articleId  String
+  article    Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  locale     String
+  title      String
+  menuTitle  String  @default("")
+  excerpt    String  @default("")
+  dateLabel  String  @default("")
+  bodyHtml   String  @default("")
+  paragraphs String  @default("[]")
+
+  @@unique([articleId, locale])
+  @@index([locale])
+}
+
+model MenuItem {
+  id        String     @id @default(cuid())
+  parentId  String?
+  parent    MenuItem?  @relation("MenuTree", fields: [parentId], references: [id], onDelete: Cascade)
+  children  MenuItem[] @relation("MenuTree")
+  href      String
+  labelTg   String
+  labelRu   String
+  labelEn   String
+  sortOrder Int        @default(0)
+  published Boolean    @default(true)
+}
+
+model SiteSetting {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String
+}
+
+model UiString {
+  id      String @id @default(cuid())
+  key     String @unique
+  valueTg String @default("")
+  valueRu String @default("")
+  valueEn String @default("")
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  path      String   @unique
+  alt       String   @default("")
+  createdAt DateTime @default(now())
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  entity    String
+  entityId  String?
+  meta      String   @default("{}")
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([entity, entityId])
+}

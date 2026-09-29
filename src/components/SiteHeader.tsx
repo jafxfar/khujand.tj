@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { HeaderMenu } from '@/components/HeaderMenu'
-import { getMenu } from '@/data/i18n/menu'
-import { getUi } from '@/data/i18n/ui'
+import { getMenu, type MenuItem } from '@/data/i18n/menu'
+import { getUi, type UiStrings } from '@/data/i18n/ui'
 import { withLangPath, type Locale } from '@/lib/i18n'
 
 const formatDate = (date: Date, lang: Locale) => {
@@ -22,15 +22,31 @@ const flags: { code: Locale; src: string; alt: string; title: string }[] = [
   { code: 'en', src: '/images/en.svg', alt: 'English', title: 'English' },
 ]
 
-type SiteHeaderProps = {
-  lang: Locale
+export type HeaderChrome = {
+  logo: string
+  searchUrl: string
+  oldSiteUrl: string
+  feedbackUrl: string
 }
 
-export const SiteHeader = ({ lang }: SiteHeaderProps) => {
+type SiteHeaderProps = {
+  lang: Locale
+  menu?: MenuItem[]
+  ui?: UiStrings
+  header?: HeaderChrome
+}
+
+export const SiteHeader = ({ lang, menu: menuProp, ui: uiProp, header }: SiteHeaderProps) => {
   const [dateLabel, setDateLabel] = useState('')
   const pathname = usePathname() || `/${lang}`
-  const ui = getUi(lang)
-  const menu = getMenu(lang)
+  const ui = uiProp ?? getUi(lang)
+  const menu = menuProp ?? getMenu(lang)
+  const logo = header?.logo ?? '/images/stories/banners/banner -110.jpg'
+  const searchUrl = header?.searchUrl
+    ? `${header.searchUrl}${header.searchUrl.includes('?') ? '&' : '?'}lang=${lang}`
+    : `https://khujand.tj/index.php?option=com_search&view=search&Itemid=204&lang=${lang}`
+  const oldSiteUrl = header?.oldSiteUrl ?? 'http://217.11.179.39/khujand_old'
+  const feedbackUrl = header?.feedbackUrl ?? 'https://khujand.tj/feedback'
 
   useEffect(() => {
     setDateLabel(formatDate(new Date(), lang))
@@ -79,7 +95,7 @@ export const SiteHeader = ({ lang }: SiteHeaderProps) => {
       <div id="logo">
         <p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/stories/banners/banner -110.jpg" alt={ui.siteTitle} />
+          <img src={logo} alt={ui.siteTitle} />
           <br />
         </p>
       </div>
@@ -89,10 +105,7 @@ export const SiteHeader = ({ lang }: SiteHeaderProps) => {
       <div id="banner">
         <p style={{ textAlign: 'center' }}>
           &nbsp;
-          <a
-            href={`https://khujand.tj/index.php?option=com_search&view=search&Itemid=204&lang=${lang}`}
-            title={ui.search}
-          >
+          <a href={searchUrl} title={ui.search}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/stories/banners/search.png"
@@ -102,18 +115,17 @@ export const SiteHeader = ({ lang }: SiteHeaderProps) => {
               style={{ border: 0 }}
             />
           </a>{' '}
-          <a href="http://217.11.179.39/khujand_old" target="_blank" rel="noreferrer" title={ui.oldSite}>
+          <a href={oldSiteUrl} target="_blank" rel="noreferrer" title={ui.oldSite}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/stories/banners/sites.png"
               alt={ui.oldSite}
               title={ui.oldSite}
               width={20}
-              style={{ border: 0 }}
             />
           </a>
           &nbsp;
-          <a href="https://khujand.tj/feedback" title={ui.feedback}>
+          <a href={feedbackUrl} title={ui.feedback}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/stories/banners/email.png"

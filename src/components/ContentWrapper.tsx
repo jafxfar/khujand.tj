@@ -32,9 +32,13 @@ const CrumbPill = ({ crumb }: { crumb: BreadcrumbCrumb }) => {
   return <span className="pathway">{inner}</span>
 }
 
-export const ContentWrapper = ({ breadcrumb = 'Асосӣ', crumbs, children }: ContentWrapperProps) => {
+export const ContentWrapper = ({ breadcrumb = '', crumbs, children }: ContentWrapperProps) => {
   const items: BreadcrumbCrumb[] =
-    crumbs && crumbs.length > 0 ? crumbs : [{ label: breadcrumb }]
+    crumbs && crumbs.length > 0
+      ? crumbs
+      : breadcrumb
+        ? [{ label: breadcrumb }]
+        : []
 
   return (
     <>

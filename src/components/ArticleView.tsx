@@ -1,6 +1,7 @@
 'use client'
 
 import { ArticleRating } from '@/components/ArticleRating'
+import type { UiStrings } from '@/data/i18n/ui'
 import type { Locale } from '@/lib/i18n'
 
 type RatingData = {
@@ -21,6 +22,7 @@ type ArticleViewProps = {
   roleTitle?: string
   paragraphs: string[]
   rating?: RatingData
+  ui?: Pick<UiStrings, 'print' | 'emailAction'>
 }
 
 export const ArticleView = ({
@@ -35,7 +37,11 @@ export const ArticleView = ({
   roleTitle,
   paragraphs,
   rating,
+  ui,
 }: ArticleViewProps) => {
+  const printLabel = ui?.print ?? 'Print'
+  const emailLabel = ui?.emailAction ?? 'Email'
+
   const handlePrint = () => {
     window.print()
   }
@@ -54,13 +60,13 @@ export const ArticleView = ({
                       type="button"
                       className="article-icon-btn"
                       onClick={handlePrint}
-                      aria-label="Print"
-                      title="Print"
+                      aria-label={printLabel}
+                      title={printLabel}
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src="/templates/yoo_flux/images/printButton.png"
-                        alt="Print"
+                        alt={printLabel}
                         width={16}
                         height={16}
                       />
@@ -69,13 +75,13 @@ export const ArticleView = ({
                   <div className="icon email">
                     <a
                       href={`mailto:?subject=${encodeURIComponent(title)}`}
-                      aria-label="Email"
-                      title="Email"
+                      aria-label={emailLabel}
+                      title={emailLabel}
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src="/templates/yoo_flux/images/emailButton.png"
-                        alt="Email"
+                        alt={emailLabel}
                         width={16}
                         height={16}
                       />
