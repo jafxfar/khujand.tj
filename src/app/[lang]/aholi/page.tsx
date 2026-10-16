@@ -1,0 +1,23 @@
+import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
+import { ArticlePage } from '@/components/ArticlePage'
+import { getAholiArticleFromDb } from '@/lib/content/articles'
+import { isLocale } from '@/lib/i18n'
+
+type Props = {
+  params: Promise<{ lang: string }>
+}
+
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+  const { lang: raw } = await params
+  if (!isLocale(raw)) return {}
+  const article = await getAholiArticleFromDb(raw)
+  return { title: article.title }
+}
+
+export default async function AholiPage({ params }: Props) {
+  const { lang: raw } = await params
+  if (!isLocale(raw)) notFound()
+  const article = await getAholiArticleFromDb(raw)
+  return <ArticlePage lang={raw} article={article} />
+}

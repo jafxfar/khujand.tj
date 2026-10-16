@@ -1,0 +1,10 @@
+/* Copyright (C) 2007 - 2010 YOOtheme GmbH */
+
+/*
+ * This CSS file is for customization purpose only
+ */ 
+
+div.module div.yoo-gallery {
+	margin: 15px auto 5px auto;
+	width: 600px;
+}

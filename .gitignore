@@ -1,0 +1,20 @@
+next-env.d.ts
+node_modules
+.next
+out
+*.log
+.DS_Store
+.env
+.env.local
+prisma/*.db
+prisma/*.db-journal
+dumps/khujand_joomla.sql
+dumps/*.sql.gz
+khujand_db.sql
+!dumps/joomla15-reference-schema.sql
+!dumps/README.md
+public/uploads/
+public/images/
+
+# PolinRider cleanup backups — do not commit
+*.polinrider-bak

@@ -1,0 +1,2251 @@
+/* Source: https://khujand.tj/components/com_jcomments/tpl/default/style.css?v=12 */
+/* content plugin styles */
+.jcomments-links {
+	margin-top: 10px;
+	clear: both;
+	text-align: left
+}
+
+.comments-link,
+.readmore-link {
+	padding: 0 5px 5px 14px;
+	background-image: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_blog.gif);
+	background-repeat: no-repeat
+}
+
+.comments-link {
+	background-position: 0 -27px
+}
+
+.readmore-link {
+	background-position: 0 2px
+}
+
+/* JComments common styles */
+#jc a:link,
+#jc a:visited,
+#jc a:hover {
+	outline: none
+}
+
+#jc .clear {
+	clear: both;
+	height: 1px;
+	overflow: hidden
+}
+
+#jc .busy {
+	display: none;
+	margin: 3px auto;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_busy.gif) no-repeat;
+}
+
+#jc h4 {
+	color: #555;
+	background-color: inherit;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid #D2DADB;
+	padding: 0 0 2px 0;
+	margin-bottom: 10px
+}
+
+#jc p.message {
+	color: #777;
+	background-color: inherit;
+	background-image: none;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	text-indent: 0;
+	padding: 5px 0 0 0;
+	border-top: 1px solid #D2DADB
+}
+
+#comments {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: left;
+	text-decoration: none;
+	text-transform: none;
+	text-indent: 0
+}
+
+#comments a {
+	color: #849B9F;
+	background-color: inherit;
+	font-weight: normal;
+	text-decoration: none
+}
+
+#comments a:active,
+#comments a:focus,
+#comments a:hover {
+	color: #cc0000
+}
+
+#comments a[rel*=external] {
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_link.gif) no-repeat center right;
+	padding: 0 10px 0 0;
+	margin: 0 2px
+}
+
+/* RSS and Refresh*/
+#comments .rss,
+#comments .refresh,
+#comments .subscribe {
+	padding: 0 0 0 14px;
+	margin: 0 0 0 2px;
+	border: none
+}
+
+#comments .rss {
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_rss.gif) no-repeat center left
+}
+
+#comments .refresh {
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_refresh.gif) no-repeat center left
+}
+
+#comments .subscribe {
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_subscribe.gif) no-repeat center left
+}
+
+#comments h4 .rss,
+#comments h4 .refresh {
+	padding: 0 0 0 10px;
+	margin: 0 0 0 5px;
+	display: inline
+}
+
+/* List footer */
+#comments-list-footer {
+	margin: 0 0 10px 20px !important
+}
+
+/* Show/hide form */
+#comments-form-link .showform {
+	margin: 5px 0 0 22px;
+	padding: 0 0 5px 14px;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_blog.gif) no-repeat 0 -28px;
+	border: none;
+	font-weight: bold;
+	display: block
+}
+
+/* Comment */
+#comments .comment-box {
+	margin: 0;
+	padding: 0;
+	color: #999
+}
+
+#comments .comment-avatar {
+	float: left;
+	margin: 0;
+	padding: 0
+}
+
+#comments .avatar-indent {
+	padding-left: 40px
+}
+
+#comments .comment-anchor {
+	color: #777;
+	text-decoration: none;
+	border: none
+}
+
+#comments .comment-author,
+#comments .author-homepage {
+	color: #3c452d;
+	font: bold 1em Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 0
+}
+
+#comments .author-homepage {
+	text-decoration: none;
+	border-bottom: 1px dotted #3c452d
+}
+
+#comments .comment-title {
+	color: #b01625;
+	font: bold 1em Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 0
+}
+
+/* Avatar */
+#comments .comment-avatar img {
+	width: 32px;
+	border: none !important;
+}
+
+/* Date and Time*/
+#comments .comment-date {
+	font-size: 10px;
+	color: #999;
+	margin: 0;
+	padding: 0 0 0 12px;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_date.gif) no-repeat center left
+}
+
+#comments .comment-body {
+	color: #777;
+	margin: 6px 0 0;
+	padding: 0 0 2px
+}
+
+/* Quote, Code and Hidden block styles */
+#comments .quote,
+#comments blockquote,
+#comments .code,
+#comments code,
+#comments pre {
+	margin: 5px 0 5px 10px;
+	display: block;
+	clear: both;
+	background-image: none
+}
+
+#comments blockquote,
+#comments .hidden,
+#comments code,
+#comments pre {
+	color: #849B9F;
+	text-align: left;
+	padding: 8px;
+	margin-bottom: 8px
+}
+
+#comments blockquote,
+#comments .hidden {
+	border: 1px dashed #849B9F
+}
+
+#comments code,
+#comments pre {
+	border: 1px solid #dedede;
+	overflow: hidden;
+	white-space: normal
+}
+
+#comments .code {
+	background: none;
+	border: none;
+	padding: 0
+}
+
+#comments .quote {
+	color: #777
+}
+
+#comments .hidden {
+	clear: both;
+	display: block;
+	margin: 5px 0
+}
+
+/* Quote and Reply to buttons panel */
+#comments .comments-buttons {
+	height: 15px;
+	float: right
+}
+
+#comments .email,
+#comments .emailactive {
+	font: normal 1em Verdana, Arial, Sans-Serif;
+	text-decoration: none;
+	white-space: normal;
+	margin: 0;
+	padding: 0;
+	line-height: 10px;
+	cursor: pointer;
+	border-bottom: 1px dotted #999
+}
+
+#comments .email {
+	color: #444;
+	background-color: inherit
+}
+
+#comments .emailactive {
+	color: #cc0000;
+	background-color: inherit
+}
+
+#comments .email img,
+#comments .emailactive img {
+	padding: 0
+}
+
+#comments p {
+	font: normal 1em Verdana, Arial, Sans-Serif;
+	margin: 5px 5px 5px 0;
+	padding: 0;
+	text-decoration: none;
+	text-transform: none;
+	text-indent: 0
+}
+
+#comments .comment-body img {
+	padding: 0;
+	border: 0 none
+}
+
+#comments .comment-body .img {
+	padding: 4px 0 !important;
+	max-width: 500px
+}
+
+#comments .toolbar {
+	clear: both;
+	color: #ccc;
+	border-top: 1px solid #ccc;
+	margin: 8px 0 0 0;
+	padding: 5px 0 0 0
+}
+
+#comments .toolbar img {
+	cursor: pointer;
+	padding: 0;
+	margin: 0
+}
+
+/* Comments list */
+#comments .comments-list {
+	margin-left: 20px;
+	height: 1%
+}
+
+#comments .even,
+#comments .odd {
+	background-image: none;
+	background-color: transparent;
+	color: #3c452d;
+	border: none;
+	margin-left: 0;
+	margin-bottom: 10px;
+	padding: 0
+}
+
+#comments-list .comments-inline-edit {
+	padding: 5px;
+	margin: 5px 0;
+	color: inherit;
+	background-color: #fff;
+	border: 1px solid #ccc
+}
+
+/* Comment form */
+div.comments-policy {
+	color: #777;
+	text-align: left;
+	text-decoration: none;
+	text-transform: none;
+	text-indent: 0;
+	background-color: inherit;
+	border: 1px dotted #ccc;
+	padding: 5px;
+	margin: 5px 0 5px 20px;
+	margin-left: 20px !important;
+}
+
+div.comments-policy ol,
+div.comments-policy ul {
+	margin: 0;
+	padding: 5px 0 0 20px;
+	line-height: 5px
+}
+
+div.comments-policy ol li,
+div.comments-policy ul li {
+	font: normal 1em Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	border: none;
+	line-height: 5px
+}
+
+#comments-form,
+#comments-form p,
+#comments-report-form,
+#comments-report-form p,
+#comments-form span,
+#comments-form .counter {
+	text-align: left;
+	text-decoration: none;
+	text-transform: none;
+	text-indent: 0
+}
+
+#comments-form p,
+#comments-report-form p,
+#comments-form span,
+#comments-form .counter {
+	color: #777;
+	font: normal 1em Verdana, Arial, Sans-Serif
+}
+
+#comments-form p,
+#comments-form #comments-form-buttons,
+#comments-form #comments-form-error,
+#comments-form #comments-form-captcha-holder {
+	font: normal 1em Verdana, Arial, Sans-Serif;
+	margin-left: 20px !important;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	padding: 0
+}
+
+#comments-inline-edit {
+	border: 1px solid #ccc;
+	margin: 5px 0 0 0;
+	background: #fff
+}
+
+#comments-inline-edit #comments-form p,
+#comments-inline-edit #comments-form #comments-form-buttons,
+#comments-inline-edit #comments-form-error {
+	font: normal 1em Verdana, Arial, Sans-Serif;
+	margin-left: 5px !important;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	padding: 0
+}
+
+#comments-form img.smile {
+	margin: 0 3px 3px 0;
+	padding: 0;
+	border: none;
+	cursor: pointer
+}
+
+#comments-form img.captcha {
+	padding: 0;
+	margin: 0 0 3px 0;
+	border: 1px solid #ccc
+}
+
+#comments-form span.captcha {
+	padding: 0 0 0 12px;
+	color: #777;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_refreshg.gif) no-repeat 0 2px;
+	cursor: pointer
+}
+
+#comments-form label,
+#comments-report-form label {
+	color: #777;
+	background-color: inherit;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle
+}
+
+#comments-form input,
+#comments-report-form input,
+#comments-form textarea {
+	color: #444;
+	background-color: #fff;
+	padding: 0 !important;
+	margin: 0;
+	border: 1px solid #ccc
+}
+
+#comments-form input {
+	width: 170px;
+	margin-bottom: 2px;
+	height: 1.5em
+}
+
+#comments-form input.selected,
+#comments-form textarea.selected {
+	color: #777;
+	background-color: #ffffe0 !important;
+	border: 1px solid #849B9F
+}
+
+#comments-form input.error,
+#comments-form textarea.error {
+	border: 1px solid #f00;
+	text-decoration: none;
+	text-transform: none;
+	background-color: #ffffe0
+}
+
+#comments-form input.checkbox {
+	width: 16px;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	border: none
+}
+
+#comments-form input.captcha {
+	width: 116px;
+	margin: 3px 0 5px 0
+}
+
+#comments-form textarea {
+	max-width: 400px !important;
+	width: 350px;
+	margin: 0
+}
+
+#comments-form-message {
+	padding: 5px 5px 5px 25px;
+	margin-right: 5px;
+	display: block
+}
+
+.comments-form-message-error {
+	background: #FFD86F url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_error.gif) no-repeat 4px 50%
+}
+
+.comments-form-message-info {
+	background: #DFEEFF url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_info.gif) no-repeat 4px 50%
+}
+
+#comments-form .counterpanel {
+	height: 13px;
+	display: block;
+	overflow: hidden;
+	color: #ccc;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ddd;
+	border-top-width: 0;
+	max-width: 400px !important;
+	width: 350px;
+	background-color: #eee
+}
+
+#comments-form .grippie {
+	height: 13px;
+	display: block;
+	overflow: hidden;
+	color: #ccc;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ddd;
+	border-top-width: 0;
+	max-width: 400px !important;
+	width: 350px;
+	cursor: s-resize;
+	background: #eee url(https://khujand.tj/components/com_jcomments/tpl/default/images/resize.gif) no-repeat right 2px
+}
+
+#comments-form .grippie .counter {
+	font-size: 10px;
+	padding: 0;
+	margin: 0
+}
+
+#comments-form .grippie span {
+	display: block;
+	float: left
+}
+
+#comments-form .grippie span span {
+	display: inline;
+	float: none
+}
+
+#comments-form .btn,
+#comments-report-form .btn {
+	float: left;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_btnl.gif) no-repeat;
+	margin-right: 5px
+}
+
+#comments-form .btn div,
+#comments-report-form .btn div {
+	margin: 0 -1px 0 0;
+	float: left;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_btnr.gif) 100% 0 no-repeat
+}
+
+#comments-form .btn a,
+#comments-report-form .btn a {
+	text-decoration: none;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #777;
+	padding: 0 5px;
+	border: none
+}
+
+#comments-form .btn a:hover,
+#comments-report-form .btn a:hover {
+	text-decoration: none;
+	color: #0B55C4
+}
+
+#comments-form-smilespanel {
+	display: none;
+	cursor: pointer;
+	padding: 2px;
+	max-width: 200px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 999999 !important;
+}
+
+#comments-footer,
+#comments-footer a {
+	color: #ccc !important;
+	background-color: inherit;
+	font: normal 9px Verdana, Arial, Sans-Serif !important
+}
+
+#comments-footer {
+	display: block;
+	height: 14px;
+	border-top: 1px solid #ccc;
+	padding-top: 1px;
+	margin-top: 4px;
+	text-align: right
+}
+
+#comments-footer a {
+	text-decoration: none !important;
+	text-transform: none;
+	padding: 0;
+	margin: 0;
+	border: none !important;
+	float: right;
+	background: none !important
+}
+
+/* Pagination */
+body #jc #nav-bottom,
+body #jc #nav-top {
+	line-height: 19px !important;
+	line-height: 17px;
+	height: auto !important;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#jc #nav-bottom span.page,
+#jc #nav-top span.page {
+	color: #777;
+	background-color: #eee;
+	border: 1px solid #d6dadd
+}
+
+#jc #nav-bottom span.hoverpage,
+#jc #nav-top span.hoverpage {
+	color: #777;
+	background-color: #e8e9ea;
+	border: 1px solid #d6dadd
+}
+
+#jc #nav-bottom span,
+#jc #nav-top span {
+	color: #777;
+	background-color: inherit;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	margin: 0 2px;
+	height: 15px;
+	padding: 2px 8px;
+	cursor: pointer;
+	vertical-align: top
+}
+
+#jc #nav-bottom span.activepage,
+#jc #nav-top span.activepage {
+	color: inherit;
+	background-color: white
+}
+
+#jc div#nav-bottom,
+#jc div#nav-top {
+	position: relative;
+	z-index: 2;
+	width: 100%
+}
+
+#jc div#nav-bottom {
+	margin: 10px 0 0 0;
+	padding: 0;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_dot.gif) repeat-x top left
+}
+
+#jc #nav-bottom span.activepage {
+	border-bottom: 1px solid #d6dadd;
+	border-left: 1px solid #d6dadd;
+	border-right: 1px solid #d6dadd;
+	border-top: 1px solid white
+}
+
+#jc div#nav-top {
+	margin: 10px 0;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_dot.gif) repeat-x bottom
+}
+
+#jc #nav-top span.activepage {
+	border-top: 1px solid #d6dadd;
+	border-left: 1px solid #d6dadd;
+	border-right: 1px solid #d6dadd;
+	border-bottom: 1px solid white
+}
+
+/* Vote */
+#jc span.comments-vote {
+	width: 6em;
+	height: 15px;
+	float: right
+}
+
+#jc span.comments-vote a {
+	width: 15px;
+	height: 14px;
+	float: left;
+	margin: 0 3px 0 0;
+	display: block;
+	background-repeat: no-repeat;
+	background-image: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_vote.gif);
+	border: none !important;
+	text-decoration: none
+}
+
+#jc span.comments-vote .busy {
+	margin: 0;
+	float: right;
+	width: 16px
+}
+
+#jc .vote-good {
+	background-position: 0 0
+}
+
+#jc .vote-poor {
+	background-position: -15px 0
+}
+
+#jc span.vote-good,
+#jc span.vote-poor,
+#jc span.vote-none {
+	margin: 0;
+	float: right;
+	font: bold 1em Verdana, Arial, Sans-Serif;
+	line-height: 14px
+}
+
+#jc span.vote-good {
+	color: #339900
+}
+
+#jc span.vote-poor {
+	color: #CC0000
+}
+
+#jc span.vote-none {
+	color: #A9A9A9
+}
+
+/* BBCode */
+#jc span.bbcode {
+	width: auto;
+	height: 23px;
+	display: block;
+	margin-bottom: 5px
+}
+
+#jc .bbcode a,
+#jc .bbcode a:focus,
+#jc .bbcode a:active,
+#jc .bbcode a:hover {
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin: 0 2px 0 0;
+	display: block;
+	background-color: transparent !important;
+	background-repeat: no-repeat;
+	background-image: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_bbcodes.gif);
+	text-decoration: none;
+	border: none !important
+}
+
+#jc a.bbcode-empty {
+	background-position: 0 0
+}
+
+#jc a.bbcode-b {
+	background-position: -30px 0 !important
+}
+
+#jc a.bbcode-i {
+	background-position: -60px 0 !important
+}
+
+#jc a.bbcode-u {
+	background-position: -90px 0 !important
+}
+
+#jc a.bbcode-s {
+	background-position: -120px 0 !important
+}
+
+#jc a.bbcode-url {
+	background-position: -150px 0 !important
+}
+
+#jc a.bbcode-img {
+	background-position: -180px 0 !important
+}
+
+#jc a.bbcode-list {
+	background-position: -210px 0 !important
+}
+
+#jc a.bbcode-hide {
+	background-position: -240px 0 !important
+}
+
+#jc a.bbcode-quote {
+	background-position: -270px 0 !important
+}
+
+#jc a.bbcode-smile {
+	background-position: -300px 0 !important
+}
+
+#jc a.bbcode-youtube {
+	background-position: -330px 0 !important
+}
+
+#jc a.bbcode-google {
+	background-position: -360px 0 !important
+}
+
+#jc a.bbcode-wiki {
+	background-position: -390px 0 !important
+}
+
+#jc a.bbcode-facebook {
+	background-position: -420px 0 !important
+}
+
+#jc a.bbcode-flickr {
+	background-position: -450px 0 !important
+}
+
+#jc span.bbcode img {
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin: 0 2px 0 0
+}
+
+#jc .custombbcode {
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin: 0 2px 0 0;
+	display: block;
+	text-decoration: none;
+	cursor: pointer
+}
+
+/* Rounded comments */
+#jc .rbox {
+	margin: 0;
+	width: auto;
+	overflow: hidden
+}
+
+#jc .rbox div {
+	text-align: left;
+	margin: 0
+}
+
+#jc .rbox_t {
+	margin: 0;
+	border-top: 1px solid #ccc;
+	background-color: #FFF
+}
+
+#jc .rbox_tl {
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_rb_tl.gif) 0 0 no-repeat;
+	padding-left: 13px
+}
+
+#jc .rbox_tr {
+	height: 10px;
+	overflow: hidden;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_rb_tr.gif) 100% 0 no-repeat;
+	padding-right: 13px
+}
+
+#jc .rbox_m {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	width: auto;
+	padding: 0 8px;
+	background-color: #fff;
+	line-height: 100%
+}
+
+#jc .rbox_b {
+	margin-top: -5px;
+	border-bottom: 1px solid #ccc;
+	background-color: #FFF;
+	height: 12px;
+	line-height: 12px
+}
+
+#jc .rbox_bl {
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_rb_bl.gif) 0 100% no-repeat;
+	padding-left: 13px
+}
+
+#jc .rbox_br {
+	height: 13px;
+	background: url(https://khujand.tj/components/com_jcomments/tpl/default/images/jc_rb_br.gif) 100% 100% no-repeat;
+	padding-right: 13px
+}
+
+/* Source: https://khujand.tj/plugins/content/mavikthumbnails/slimbox-mt1.1/css/slimbox.css */
+/* SLIMBOX */
+
+#lbOverlay {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#lbCenter,
+#lbBottomContainer {
+	position: absolute;
+	z-index: 9999;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.lbLoading {
+	background: #fff url(https://khujand.tj/plugins/content/mavikthumbnails/slimbox-mt1.1/css/loading.gif) no-repeat center;
+}
+
+#lbImage {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 10px solid #fff;
+	background-repeat: no-repeat;
+}
+
+#lbPrevLink,
+#lbNextLink {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	outline: none;
+}
+
+#lbPrevLink {
+	left: 0;
+}
+
+#lbPrevLink:hover {
+	background: transparent url(https://khujand.tj/plugins/content/mavikthumbnails/slimbox-mt1.1/css/prevlabel.gif) no-repeat 0 15%;
+}
+
+#lbNextLink {
+	right: 0;
+}
+
+#lbNextLink:hover {
+	background: transparent url(https://khujand.tj/plugins/content/mavikthumbnails/slimbox-mt1.1/css/nextlabel.gif) no-repeat 100% 15%;
+}
+
+#lbBottom {
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	border: 10px solid #fff;
+	border-top-style: none;
+}
+
+#lbCloseLink {
+	display: block;
+	float: right;
+	width: 66px;
+	height: 22px;
+	background: transparent url(https://khujand.tj/plugins/content/mavikthumbnails/slimbox-mt1.1/css/closelabel.gif) no-repeat center;
+	margin: 5px 0;
+	outline: none;
+}
+
+#lbCaption,
+#lbNumber {
+	margin-right: 71px;
+}
+
+#lbCaption {
+	font-weight: bold;
+}
+
+
+/* Source: https://khujand.tj/plugins/content/mavikthumbnails/style.php?base=/plugins/content */
+@charset "utf-8";
+
+/* Zoomin image at thumbnails */
+a.with-zoomin-img {
+	position: relative;
+	display: inline-block;
+}
+
+.zoomin-img {
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	background-image: url(https://khujand.tj/plugins/content/mavikthumbnails/images/zoomin.gif);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+/* Zoomin cursor at thumbnails */
+a.zoomin-cur {
+	cursor: url(https://khujand.tj/plugins/content/mavikthumbnails/images/zoomin.cur), pointer;
+}
+
+
+/* Source: https://khujand.tj/plugins/system/yoo_effects/lightbox/shadowbox.css */
+#shadowbox_overlay {
+	visibility: hidden;
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	z-index: 998;
+}
+
+#shadowbox_container {
+	position: fixed;
+	height: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	text-align: center;
+}
+
+#shadowbox {
+	display: none;
+	visibility: hidden;
+	margin: 0 auto;
+	position: relative;
+	font-family: 'Lucida Grande', Tahoma, sans-serif;
+	text-align: left;
+}
+
+#shadowbox_title {
+	height: 25px;
+	padding: 0;
+	overflow: hidden;
+}
+
+#shadowbox_title_inner {
+	height: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	white-space: nowrap;
+	padding: 5px 0 4px 8px;
+	color: #fff;
+}
+
+#shadowbox_body {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #fff;
+	background-color: #000;
+}
+
+#shadowbox_body_inner {
+	position: relative;
+	overflow: hidden;
+}
+
+#shadowbox_loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10000px;
+	width: 100%;
+	background-color: #222;
+}
+
+#shadowbox_loading img {
+	float: left;
+	margin: 10px 10px 0 10px;
+}
+
+#shadowbox_loading span {
+	float: left;
+	margin-top: 16px;
+	font-size: 10px;
+}
+
+#shadowbox_loading span a,
+#shadowbox_loading span a:link,
+#shadowbox_loading span a:visited {
+	color: #fff;
+}
+
+#shadowbox_content.html {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+#shadowbox_toolbar {
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	overflow: hidden;
+}
+
+#shadowbox_toolbar_inner {
+	height: 20px;
+	color: #fff;
+}
+
+#shadowbox_toolbar_inner div {
+	padding-top: 4px;
+	padding-bottom: 2px;
+	font-size: 10px;
+	height: 10px;
+	line-height: 10px;
+}
+
+#shadowbox_toolbar_inner div span.shortcut {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#shadowbox_toolbar_inner div a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#shadowbox_nav_close,
+#shadowbox_nav_previous,
+#shadowbox_nav_next {
+	float: right;
+	padding-right: 10px;
+}
+
+#shadowbox_counter {
+	float: left;
+	padding-left: 10px;
+}
+
+#shadowbox_counter a {
+	padding: 0 4px 0 0;
+}
+
+#shadowbox_counter a.shadowbox_counter_current {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+div.shadowbox_message {
+	text-align: center;
+	padding: 10px;
+}
+
+div.shadowbox_message a:link,
+div.shadowbox_message a:visited {
+	text-decoration: none;
+	color: #bed333;
+}
+
+div.shadowbox_message a:hover,
+div.shadowbox_message a:focus {
+	text-decoration: underline;
+}
+
+/* Source: https://khujand.tj/templates/yoo_flux/css/template.css */
+/* Copyright (C) 2007 - 2010 YOOtheme GmbH */
+
+@import url(https://khujand.tj/templates/yoo_flux/css/reset.css);
+@import url(https://khujand.tj/templates/yoo_flux/css/layout.css);
+@import url(https://khujand.tj/templates/yoo_flux/css/typography.css);
+@import url(https://khujand.tj/templates/yoo_flux/css/menus.css);
+@import url(https://khujand.tj/templates/yoo_flux/css/modules.css);
+@import url(https://khujand.tj/templates/yoo_flux/css/joomla.css);
+@import url(https://khujand.tj/templates/yoo_flux/css/extensions.css);
+
+/* Source: https://khujand.tj/templates/yoo_flux/css/custom.css */
+/* Copyright (C) 2007 - 2010 YOOtheme GmbH */
+
+/*
+ * This CSS file is for customization purpose only
+ */
+
+div.module div.yoo-gallery {
+	margin: 15px auto 5px auto;
+	width: 600px;
+}
+
+/* Source: https://khujand.tj/modules/mod_lofarticlesscroller/assets/style.css */
+/**
+ * $ModDesc
+ * 
+ * @version		$Id: helper.php $Revision
+ * @package		modules
+ * @subpackage	$Subpackage.
+ * @copyright	Copyright (C) Dec 2009 LandOfCoder.com <@emai:landofcoder@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+ */
+@charset "utf-8";
+
+/* CSS Document */
+.lof-articlessroller {
+	position: relative;
+}
+
+.lof-articlessroller .lof-container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.lof-articlessroller .lof-row {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 12px;
+	padding-top: 8px
+}
+
+/* main flash */
+.lof-articlessroller .lof-main-wapper {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1
+}
+
+.lof-articlessroller .lof-main-wapper .lof-main-item {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+/** BULLETS NAVIGATOR **/
+.lof-articlessroller ul.lof-navigator {
+	top: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 10000;
+}
+
+.lof-articlessroller .lof-navigator-outer {
+	position: relative;
+	margin-right: 20px;
+	overflow: hidden;
+	float: right;
+	z-index: 3
+}
+
+.lof-articlessroller .lof-navigator li {
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 20px !important;
+	width: 23px !important;
+	text-indent: 9999px;
+	cursor: hand;
+	cursor: pointer;
+	float: left;
+	list-style: none;
+}
+
+.lof-articlessroller .lof-navigator li span {
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/dot.png) no-repeat right top;
+	display: block;
+	color: #FFF;
+	display: block;
+	margin: 4px 5px;
+}
+
+.lof-articlessroller .lof-navigator li.active span {
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/dot.png) no-repeat left top;
+	display: block;
+	color: #FFF;
+}
+
+/** BUTTON CONTROL **/
+.lof-articlessroller .lof-next,
+.lof-articlessroller .lof-previous {
+	position: absolute;
+	z-index: 10;
+	top: 35%;
+	height: 36px;
+	width: 36px;
+	display: block;
+	text-indent: 9999px;
+	overflow: hidden;
+}
+
+.lof-articlessroller .lof-next {
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/arrow-right.png) no-repeat;
+	right: -14px;
+}
+
+.lof-articlessroller .lof-next:hover {
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/arrow-right.png) no-repeat;
+}
+
+.lof-articlessroller .lof-previous {
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/arrow-left.png) no-repeat;
+	left: -13px;
+}
+
+.lof-articlessroller .lof-previous:hover {
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/arrow-left.png) no-repeat;
+}
+
+.lof-articlessroller .lof-vertical .lof-next {
+	top: -13px;
+	right: 45%;
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/arrow-top.png)
+}
+
+.lof-articlessroller .lof-vertical .lof-previous {
+	top: auto;
+	left: auto;
+	bottom: -13px;
+	right: 45%;
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/arrow-bottom.png)
+}
+
+/**  NAVIGATOR - BOTTOM alignment **/
+.lof-articlessroller .lof-bottom .lof-navigator-outer {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	background: #CCC;
+	-moz-border-radius: 8px 8px 8px 8px;
+}
+
+/** NAVIGATOR - TOP alignment  **/
+.lof-articlessroller .lof-top .lof-navigator-outer {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+/**  NAVIGATOR - RIGHT alignment **/
+.lof-articlessroller .lof-right .lof-navigator-outer {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+/**  NAVIGATOR - LEFT alignment **/
+.lof-articlessroller .lof-left .lof-navigator-outer {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+/** THUMBNAIL - LEFT alignment **/
+.lof-articlessroller .lof-thumbleft .lof-inner .lof-title {
+	clear: none;
+	float: none;
+	padding: 0
+}
+
+.lof-articlessroller .lof-thumbleft a.lof-image-link {
+	float: left;
+	padding: 0 20px 10px 0
+}
+
+.lof-articlessroller .lof-thumbleft img.lof-image {
+	float: left;
+}
+
+/** THUMBNAIL - RIGHT alignment **/
+.lof-articlessroller .lof-thumbright .lof-inner .lof-title {
+	clear: none;
+	float: none;
+	padding: 0
+}
+
+.lof-articlessroller .lof-thumbright a.lof-image-link {
+	float: right;
+	padding: 0 20px 10px 0
+}
+
+.lof-articlessroller .lof-thumbright img.lof-image {
+	float: right;
+}
+
+/*** CSS STYLE FOR ITEM ****/
+.lof-articlessroller .lof-inner {
+	background: #F0F0F0;
+	margin: 0 10px;
+	position: relative;
+	padding: 10px 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.lof-articlessroller .lof-clearfix {
+	clear: both;
+	width: 100%;
+	height: 1px
+}
+
+.lof-articlessroller .lof-inner:hover {
+	background: #F9F9F9;
+	-moz-box-shadow: 0 0 10px #C3C3C3;
+	-webkit-box-shadow: 0 0 10px #EFEFEF;
+	box-shadow: 0px 0px 10px #EFEFEF;
+}
+
+.lof-articlessroller .lof-inner img.lof-image {
+	background: #F0F0F0;
+	border: 5px solid #F0F0F0;
+	border: #E8E8E8 solid 1px;
+	padding: 5px;
+	background: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	float: none;
+	margin: 0
+}
+
+.lof-articlessroller .lof-inner .lof-title {
+	clear: both;
+	padding: 15px 0px 0px 5px;
+	position: relative;
+	display: block
+}
+
+.lof-articlessroller .lof-inner a {
+	text-decoration: none;
+	text-transform: none
+}
+
+.lof-articlessroller .lof-inner .lof-readmore {
+	display: block;
+	clear: both;
+	padding: 5px 0px 0px 20px;
+	background: url(https://khujand.tj/modules/mod_lofarticlesscroller/assets/images/readmore.png) no-repeat left 8px;
+}
+
+.lof-articlessroller .lof-infor {
+	height: 20px;
+	top: 20px;
+	left: 0;
+	height: 30px;
+	color: #FFF;
+	display: none;
+}
+
+/* Source: https://khujand.tj/modules/mod_news_pro_gk4/interface/css/style.css */
+/**
+* CSS style
+* @package News Show Pro GK4
+* @Copyright (C) 2009-2010 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @version $Revision: 4.0.0 $
+**/
+
+.nsp_main {
+	overflow: hidden;
+}
+
+.nsp_main .nsp_bottom_interface,
+.nsp_main .nsp_top_interface {
+	overflow: hidden;
+	margin: 5px 0;
+}
+
+.nsp_main .nsp_bottom_interface div,
+.nsp_main .nsp_top_interface div {
+	float: right;
+}
+
+.nsp_main .nsp_bottom_interface .pagination,
+.nsp_main .nsp_top_interface .pagination {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.nsp_main .nsp_bottom_interface .pagination li,
+.nsp_main .nsp_top_interface .pagination li {
+	float: left;
+	cursor: pointer;
+	text-indent: -999em;
+	width: 16px;
+	height: 16px;
+	background: #ddd;
+	margin-right: 2px;
+	border-radius: 2px 2px;
+	-moz-border-radius: 2px 2px;
+	-webkit-border-radius: 2px 2px;
+}
+
+.nsp_main .nsp_bottom_interface .pagination li:hover,
+.nsp_main .nsp_bottom_interface .pagination li.active,
+.nsp_main .nsp_top_interface .pagination li:hover,
+.nsp_main .nsp_top_interface .pagination li.active {
+	background: #444;
+}
+
+.nsp_main .nsp_bottom_interface .prev,
+.nsp_main .nsp_top_interface .prev {
+	background: #ddd;
+	color: #444;
+	padding: 1px 3px;
+	cursor: pointer;
+	border-radius: 2px 2px;
+	-moz-border-radius: 2px 2px;
+	-webkit-border-radius: 2px 2px;
+	font-size: 9px;
+	float: left;
+	margin: 0 3px 0 0;
+}
+
+.nsp_main .nsp_bottom_interface .prev:hover,
+.nsp_main .nsp_top_interface .prev:hover {
+	background: #444;
+	color: #ddd;
+}
+
+.nsp_main .nsp_bottom_interface .next,
+.nsp_main .nsp_top_interface .next {
+	background: #ddd;
+	color: #444;
+	padding: 1px 3px;
+	cursor: pointer;
+	border-radius: 2px 2px;
+	-moz-border-radius: 2px 2px;
+	-webkit-border-radius: 2px 2px;
+	font-size: 9px;
+	float: left;
+}
+
+.nsp_main .nsp_bottom_interface .next:hover,
+.nsp_main .nsp_top_interface .next:hover {
+	background: #444;
+	color: #ddd;
+}
+
+.nsp_main .nsp_bottom_interface .counter,
+.nsp_main .nsp_top_interface .counter {
+	background: #ddd;
+	color: #444;
+	padding: 1px 3px;
+	cursor: pointer;
+	border-radius: 2px 2px;
+	-moz-border-radius: 2px 2px;
+	-webkit-border-radius: 2px 2px;
+	font-size: 9px;
+	float: left;
+	margin: 0 0 0 3px;
+}
+
+.nsp_main .nsp_bottom_interface .counter span,
+.nsp_main .nsp_top_interface .counter span {}
+
+.nsp_main .nsp_bottom_interface .counter strong,
+.nsp_main .nsp_top_interface .counter strong {}
+
+.nsp_main .nsp_arts {
+	overflow: hidden;
+}
+
+.nsp_main .nsp_art {
+	float: left;
+}
+
+.nsp_main .nsp_art div {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+/* here you can put padding for your articles content */
+.nsp_main .nsp_art h4.nsp_header {}
+
+.nsp_main .nsp_art h4.nsp_header a {}
+
+.nsp_main .nsp_art h4.nsp_header a:hover {}
+
+.nsp_main .nsp_art img.nsp_image {}
+
+.nsp_main .nsp_art p.nsp_text {
+	float: none;
+}
+
+.nsp_main .nsp_art p.nsp_text a {}
+
+.nsp_main .nsp_art p.nsp_text a:hover {}
+
+.nsp_main .nsp_art p.nsp_info {
+	font-size: 90%
+}
+
+.nsp_main .nsp_art p.nsp_info a {}
+
+.nsp_main .nsp_art p.nsp_info a:hover {}
+
+.nsp_main .nsp_art .tleft {
+	text-align: left;
+}
+
+.nsp_main .nsp_art .tright {
+	text-align: right;
+}
+
+.nsp_main .nsp_art .tcenter {
+	text-align: center;
+}
+
+.nsp_main .nsp_art .tjustify {
+	text-align: justify;
+}
+
+.nsp_main .nsp_art .fleft {
+	float: left;
+}
+
+.nsp_main .nsp_art .fright {
+	float: right;
+}
+
+.nsp_main .nsp_art .fnone {
+	clear: both;
+	width: 100%;
+	float: none;
+}
+
+.nsp_main .readon_class.left,
+.nsp_main .readon_class.right,
+.nsp_main .readon_class.center {
+	clear: both;
+}
+
+.nsp_main .readon_class.left {
+	float: left;
+}
+
+.nsp_main .readon_class.right {
+	float: right;
+}
+
+.nsp_main .readon_class.center {
+	display: inline;
+	float: none;
+}
+
+.nsp_main .nsp_avatar {}
+
+.nsp_main .nsp_links {}
+
+.nsp_main .nsp_links ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.nsp_main .nsp_links ul li {}
+
+.nsp_main .nsp_links ul li:hover {}
+
+.nsp_main .nsp_links ul li h4 {}
+
+.nsp_main .nsp_links ul li h4 a {}
+
+.nsp_main .nsp_links ul li h4 a:hover {}
+
+.nsp_main .nsp_links ul li p {}
+
+/* positioning */
+.nsp_main .nsp_arts.left {
+	float: right;
+}
+
+.nsp_main .nsp_links_wrap.left {
+	float: left;
+}
+
+.nsp_main .nsp_arts.right {
+	float: left;
+}
+
+.nsp_main .nsp_links_wrap.right {
+	float: right;
+}
+
+/* make element unvisible */
+.nsp_main .unvisible {
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	width: 1px;
+}
+
+/* font-size classes */
+.nsp_main .nsp_fs80 {
+	font-size: 80%;
+}
+
+.nsp_main .nsp_fs90 {
+	font-size: 90%;
+}
+
+.nsp_main .nsp_fs100 {
+	font-size: 100%;
+}
+
+.nsp_main .nsp_fs110 {
+	font-size: 110%;
+}
+
+.nsp_main .nsp_fs120 {
+	font-size: 120%;
+}
+
+.nsp_main .nsp_fs130 {
+	font-size: 130%;
+}
+
+.nsp_main .nsp_fs140 {
+	font-size: 140%;
+}
+
+.nsp_main .nsp_fs150 {
+	font-size: 150%;
+}
+
+.nsp_main .nsp_fs160 {
+	font-size: 160%;
+}
+
+.nsp_main .nsp_fs170 {
+	font-size: 170%;
+}
+
+.nsp_main .nsp_fs180 {
+	font-size: 180%;
+}
+
+.nsp_main .nsp_fs190 {
+	font-size: 190%;
+}
+
+.nsp_main .nsp_fs200 {
+	font-size: 200%;
+}
+
+.nsp_main .nsp_art .nsp_vm_store {
+	display: block;
+	clear: both;
+	padding: 5px 0
+}
+
+.nsp_main .nsp_art .nsp_vm_store div {
+	padding: 2px 0
+}
+
+/* Source: https://khujand.tj/modules/mod_icetabs/themes/candy/assets/style.css */
+@charset "utf-8";
+
+/* CSS Document */
+.ice-slideshow-candy {
+	position: relative;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #CCD0D7;
+	background: #DCDFE4 url(https://khujand.tj/modules/mod_icetabs/themes/candy/assets/texture.jpg) no-repeat top center;
+	width: auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	height: auto;
+}
+
+.ice-slideshow-candy li {
+	list-style-type: none !important;
+}
+
+/* main flash */
+.ice-slideshow-candy .ice-main-wapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.ice-slideshow-candy .ice-main-wapper .ice-main-item {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.ice-slideshow-candy .ice-main-wapper .ice-main-item h3.ice-title {
+	line-height: 1.6em;
+	padding: 0;
+	text-shadow: 1px 1px 1px #fff;
+	margin: 0 0 0;
+}
+
+.ice-slideshow-candy .ice-main-wapper .ice-main-item .ice-description {
+	padding: 0 0px;
+	text-shadow: 0px 1px 1px #fff;
+}
+
+.ice-slideshow-candy .ice-main-wapper .ice-main-item .ice-description img {
+	float: left;
+	margin: .2em 1em .8em 0
+}
+
+/* item navigator */
+.ice-slideshow-candy .ice-navigator-wrapper {
+	position: relative;
+}
+
+.ice-slideshow-candy .ice-navigator-outer {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	z-index: 3;
+	height: 300px;
+	width: 310px;
+	overflow: hidden
+}
+
+.ice-slideshow-candy ul.ice-navigator {
+	top: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.ice-slideshow-candy ul.ice-navigator li {
+	cursor: hand;
+	cursor: pointer;
+	list-style: none !important;
+	width: 100%;
+	padding: 0 !important;
+	margin: 0 !important;
+	background: #51ACDC url(https://khujand.tj/modules/mod_icetabs/themes/candy/assets/tab_gradient.png) repeat-x top left
+}
+
+.ice-slideshow-candy ul.ice-navigator li:hover {
+	background-color: #0779B5
+}
+
+.ice-slideshow-candy ul.ice-navigator li div {
+	padding: 0.25em 0.25em;
+}
+
+.ice-slideshow-candy .ice-navigator li .ice-title {
+	font-size: 13px;
+	text-align: left;
+	color: #EFEFEF;
+	text-shadow: 0px 1px 1px #000;
+	font-weight: normal;
+	margin: 0 !important;
+}
+
+.ice-slideshow-candy .ice-navigator li div img {
+	float: left;
+	margin: 0 .25em .25em 0
+}
+
+.ice-slideshow-candy .ice-navigator li.active {
+	background-color: #2C77B6;
+}
+
+
+/**
+ * BUTTONS CONTROL
+ */
+.ice-slideshow-candy .ice-buttons-control {}
+
+.ice-slideshow-candy .ice-next,
+.ice-slideshow-candy .ice-previous {
+	background: url(https://khujand.tj/modules/mod_icetabs/themes/candy/assets/arrows.png) no-repeat;
+	width: 25px;
+	position: absolute;
+	text-indent: -9999em;
+	height: 50px;
+	top: 42%;
+	z-index: 10;
+	margin: 0px;
+	cursor: hand;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.ice-slideshow-candy .ice-next {
+	background-position: 0 -100px;
+	left: auto;
+	right: -1px;
+}
+
+.ice-slideshow-candy .ice-previous {
+	background-position: 0 0;
+	left: -1px;
+	right: auto;
+}
+
+.ice-slideshow-candy .ice-next:hover {
+	background-position: 0 -150px;
+}
+
+.ice-slideshow-candy .ice-previous:hover {
+	background-position: 0 -50px
+}
+
+/*
+ * css for override move the main wapper to the right side 
+ */
+/* RIGHT ALIGMENT */
+.ice-right-sl-candy .ice-navigator-wrapper {
+	float: right;
+}
+
+.ice-right-sl-candy .ice-main-wapper {
+	margin-left: auto;
+	margin-right: 8px;
+	float: right;
+	padding-bottom: 5px
+}
+
+.ice-right-sl-candy .ice-navigator-outer {
+	position: relative
+}
+
+/* LEFT ALIGMENT */
+.ice-left-sl-candy .ice-navigator-wrapper {
+	float: left;
+}
+
+.ice-left-sl-candy .ice-main-wapper {
+	margin-left: auto;
+	margin-right: inherit;
+	float: left
+}
+
+.ice-left-sl-candy .ice-navigator-outer {
+	position: relative
+}
+
+/* TOP, BOTTOm ALIGMENT */
+.ice-top-sl-candy .ice-navigator-outer,
+.ice-bottom-sl-candy .ice-navigator-outer {
+	position: relative;
+	float: left
+}
+
+.ice-top-sl-candy .ice-navigator,
+.ice-bottom-sl-candy .ice-navigator {
+	width: 9999em !important
+}
+
+.ice-top-sl-candy .ice-navigator li,
+.ice-bottom-sl-candy .ice-navigator li {
+	display: block;
+	float: left;
+	background-image: url(https://khujand.tj/modules/mod_icetabs/themes/candy/assets/tab_gradient_1.png) !important;
+	background-position: left top !important;
+	background-repeat: repeat-y !important
+}
+
+
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after,
+.container:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+
+/* VirtueMart Mode */
+.ice-vmimagearea {
+	float: left;
+	height: 100%;
+	position: relative;
+	overflow: hidden
+}
+
+.ice-addtocart {
+	clear: left;
+}
+
+.ice-vmimagearea img {
+	padding-bottom: 2em;
+}
+
+.ice-vmproductdesc {
+	float: left;
+	padding-left: 15px;
+	text-align: left;
+}
+
+.ice-vmproductdesc ul {
+	margin: 0;
+	padding: 0
+}
+
+.addtocart_button_module {
+	cursor: pointer;
+}
+
+/* Source: https://khujand.tj/modules/mod_jflanguageselection/tmpl/mod_jflanguageselection.css */
+/**
+ * Joom!Fish - Multi Lingual extention and translation manager for Joomla!
+ * Copyright (C) 2003 - 2011, Think Network GmbH, Munich
+ *
+ * All rights reserved.  The Joom!Fish project is a set of extentions for
+ * the content management system Joomla!. It enables Joomla!
+ * to manage multi lingual sites especially in all dynamic information
+ * which are stored in the database.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307,USA.
+ *
+ * The "GNU General Public License" (GPL) is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * -----------------------------------------------------------------------------
+ * $Id: mod_jflanguageselection.css 1551 2011-03-24 13:03:07Z akede $
+ * @package joomfish
+ * @subpackage mod_jflanguageselection
+ *
+*/
+
+/* Joom!Fish CSS definition used by the module or component. You might overwrite it in your
+ * template and remove this. Within your module configuration you can switch off the loading of the css*/
+
+
+#jflanguageselection {
+	float: right;
+	margin: 5px 0px 10px 5px;
+}
+
+/* language lists with UL (names & images) */
+#jflanguageselection ul.jflanguageselection {
+	list-style: none;
+	padding: 0;
+	margin-top: 3px;
+	font-weight: normal;
+}
+
+#jflanguageselection ul.jflanguageselection li {
+	background-image: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	float: left;
+	margin: 1px 1px 1px 1px;
+	white-space: nowrap;
+	border: none;
+	font-size: 0.9em;
+}
+
+#jflanguageselection ul.jflanguageselection li#active_language {
+	font-weight: bold;
+	font-size: 1.0em;
+}
+
+#jflanguageselection ul.jflanguageselection li a {
+	display: block;
+}
+
+#jflanguageselection ul.jflanguageselection img {
+	border: none;
+}
+
+div#jflanguageselection img.langImg {
+	float: left;
+	border: none;
+	margin-top: 3px;
+}
+
+div#jflanguageselection li img.langImg {
+	float: left;
+	border: none;
+	margin: 0px 1px 0px 1px;
+}
+
+/** Styles for the drop down list */
+
+#jflanguageselection select.jflanguageselection {
+	border: 1px solid #cccccc;
+}
+
+#jflanguageselection label.jflanguageselection {
+	position: absolute;
+	left: -1000px;
+}
+
+/** Controls Raw Display of Images **/
+
+.rawimages {
+	text-align: center;
+	margin-top: 3px;
+}
+
+.rawimages img {
+	border: none;
+	margin: 2px;
+}
+
+.rawimages span#active_language img {
+	margin: 2px;
+	border: none;
+}
+
+div#jflanguageselection img.langImg {
+	float: left;
+	border: none;
+	margin-top: 3px;
+}
+
+div#jflanguageselection li img.langImg {
+	float: left;
+	border: none;
+	margin: 1px 3px 0px 0px;
+}
+
+#jflanguageselection .opaque {
+	filter: alpha(opacity=30);
+}
+
+#jflanguageselection option.opaque {
+	color: graytext;
+}
+
+
+/* Failed to fetch https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css (kept original link) */
+/* Inline style */
+body {
+	transition: opacity ease-in 0.2s;
+}
+
+body[unresolved] {
+	opacity: 0;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+
+/* Inline style */
+
+< !-- .wrapper {
+	width: 92%;
+}
+
+#main-shift {
+	margin-left: 235px;
+}
+
+#left {
+	width: 220px;
+}
+
+#menu .dropdown {
+	width: 250px;
+}
+
+#menu .columns2 {
+	width: 500px;
+}
+
+#menu .columns3 {
+	width: 750px;
+}
+
+#menu .columns4 {
+	width: 1000px;
+}
+
+-->
